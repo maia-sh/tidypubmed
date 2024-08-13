@@ -1,13 +1,14 @@
-# This function is adapted from forked repository (https://github.com/maia-sh/tidypubmed)
 #' Parse Grant
+#'
+#' This function is adapted from forked repository (https://github.com/maia-sh/tidypubmed)
 #'
 #' @param nodes article node set
 #'
-#' @return A tibble
+#' @return A tibble containing PMID, grant ID, country, funder and acronym.
 #'
-#' @examples
+#' @examples 
+#' pubmed_grants(aq)
 #' 
-#'
 #' @export
 
 
@@ -22,4 +23,3 @@ pubmed_grants <- function(nodes){
   x$acronym <- xml_text_first(z,"//Acronym")
   x
 }
-
