@@ -1,16 +1,17 @@
 #' Parse Grant
 #'
-#' This function is adapted from forked repository (https://github.com/maia-sh/tidypubmed)
+#' @author Samruddhi Yerunkar
 #'
 #' @param nodes article node set
 #'
 #' @return A tibble containing PMID, grant ID, country, funder and acronym.
 #'
 #' @examples 
-#' pubmed_grants(aq)
+#' aq <- pubmed_nodeset(aqc)
+#' x <- pubmed_grants(aq)
+#' x
 #' 
 #' @export
-
 
 # Extract the Grant nodes
 pubmed_grants <- function(nodes){

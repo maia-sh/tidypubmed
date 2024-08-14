@@ -2,7 +2,7 @@
 #'
 #' @param filepath Character. Filepath including directory portion. Filepath should end in ".xml". If \code{pmid} is not provided, filename should be PMID.
 #' @param pmid Character. Default = NULL in which case \code{pmid} parsed from the filename.
-#' @param datatype Type of data to extract from xml for which there is a corresponding "pubmed_" function ("main", "abstract", "databanks", "authors", "mesh", "keywords", "pubtypes"). "main" used `pubmed_table()`
+#' @param datatype Type of data to extract from xml for which there is a corresponding "pubmed_" function ("main", "abstract", "databanks", "authors", "mesh", "keywords", "pubtypes", "grants"). "main" used `pubmed_table()`
 #' @param processed_dir Character. Default = NULL. Filepath of a directory to which processed file should be moved. By default, file will not be moved.
 #' @param quiet Logical. Default = FALSE. Whether to inform user.
 #'
