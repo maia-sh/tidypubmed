@@ -22,7 +22,7 @@ extract_pubmed <- function(filepath,
     rlang::abort("`filepath` must end in '.xml'")
   }
   
-  datatypes <- c("main", "abstract", "databanks", "authors", "mesh", "keywords", "pubtypes")
+  datatypes <- c("main", "abstract", "databanks", "authors", "mesh", "keywords", "pubtypes", "grants")
   
   datatypes_txt <-
     glue::glue_collapse(glue::glue("'{datatypes}'"), sep = ", ", last = ", or ")
